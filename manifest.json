@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Fuzzy-Portal-Access",
+  "description": "旧ポータルドメイン (portal.it-chiba.ac.jp) へのアクセスを新ドメイン (portal.chibatech.ac.jp) へ自動転送します。",
+  "version": "1.0.0",
+  "permissions": ["declarativeNetRequest"],
+  "host_permissions": ["https://portal.it-chiba.ac.jp/*"],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_redirect",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}
